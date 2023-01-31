@@ -107,9 +107,10 @@
                 </label>
               </li>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
-          <input type="button" value="Сбросить">
-          <!-- Чтобы кнопка Сбросить заработала нормально надо использовать JS?-->
+          <div class="button-catalog">
+            <button class="button-catalog" type="submit">Применить</button>
+            <button class="button-catalog" type="reset" >Сбросить</button>
+          </div>
         </form>
 
         <h2 class="search-result">Найдено гостиниц: 38</h2>
@@ -133,49 +134,53 @@
           <li class="product-card">
             <!--Как сделаь звездочки в рейтинге?-->
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="product-card-type">Гостиница</span>
             <b class="product-card-price">от 4000 ₽</b>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-favorit-button button" href="#">В избранное</a>
+            <img class="product-card-four" src="#"  alt="4 звезды">
             <button class="rating" disabled>РЕЙТИНГ: 8,5</button>
           </li>
           <li class="product-card">
             <!--Как сделаь звездочки в рейтинге?-->
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="product-card-type">Гостиница</span>
             <b class="product-card-price">от 5000 ₽</b>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-favorit-button button" href="#">В избранное</a>
+            <img class="product-card-four" src="#" alt="4 звезды">
             <button class="rating" disabled>РЕЙТИНГ: 9,2</button>
           </li>
           <li class="product-card">
             <!--Как сделаь звездочки в рейтинге?-->
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <span class="product-card-type">Гостиница</span>
             <b class="product-card-price">от 2500 ₽</b>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-favorit-button button" href="#">В избранное</a>
+            <img class="product-card-three" src="#" alt="3 звезды">
             <button class="rating" disabled>РЕЙТИНГ: 6,9</button>
           </li>
           <li class="product-card">
             <!--Как сделаь звездочки в рейтинге?-->
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <span class="product-card-type">Гостиница</span>
             <b class="product-card-price">от 1500 ₽</b>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-favorit-button button" href="#">В избранное</a>
+            <img class="product-card-one" src="#" alt="1 звезда">
             <button class="rating" disabled>РЕЙТИНГ: 5,0</button>
           </li>
         </ul>
@@ -246,8 +251,6 @@
       <a class="footer-logo" href=" https://htmlacademy.ru/">
         <img class="footer-contacts-logo" alt="Логотип html academy" src="">
       </a>
-
-
     </footer>
 
   </body>
