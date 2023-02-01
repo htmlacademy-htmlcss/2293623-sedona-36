@@ -8,8 +8,9 @@
 
   <body>
     <header class="page-header">
+      <img class="page-header-logo" src="images/index/header/logo-header.svg" width="140" height="70"
+        alt="Логотип Седона «Седона».">
       <nav class="navigation">
-        <img class="page-header-logo" alt="Логотип Седона «Седона»." src="">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -25,16 +26,19 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img src="images/index/header/search.svg">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img src="images/index/header/love.svg">
               <span class="visually-hidden">Мне нравится</span>
             </a>
           </li>
           <li class="navigation-item">
-            <button class="navigation-button" href="#">Хочу сюда!</button>
+            <a class="navigation-link-button" href="#">Хочу сюда!</a>
+          </li>
           </li>
 
         </ul>
@@ -43,8 +47,13 @@
 
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Добро пожаловать в великолепную Седону, потому что большой каньон - отстой</h1>
-      <img class="logo" src="" alt="Добро пожаловать в великолепную Седону, потому что большой каньон - отстой">
+      <section class="hero">
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="images/index/main/index-mountans.jpg" width="1200" height="485" alt="Горы">
+        <img src="images/index/main/edge.svg" width="1200" height="57">
+        <img src="images/index/main/welcome.svg" width="458" height="352"
+          alt="Welcom to the gorgeous Sedona, because the Grand Canyon sucks ">
+      </section>
       <h2 class="main-index">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <h3 class="main-index">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
       <section class="advantages">
@@ -53,9 +62,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages-photo-1" src="" alt="Вид из номера гостиницы">
+            <img class="advantages-photo-1" src="images/index/main/photo-1.jpg" alt="Вид из номера гостиницы">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -70,9 +77,7 @@
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <img class="advantages-photo-2" src="" alt="Вид на ущелье">
-          </li>
-          <li class="advantages-item">
+            <img class="advantages-photo-2" src="images/index/main/photo-2.jpg" alt="Вид на ущелье">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -83,17 +88,23 @@
         <h3 class="service">Опытный персонал и качественное обслуживание!</h3>
         <ul class="service-list">
           <li class="service-item">
-            <img class="service-photo-1" src="">
+            <div class="service-photo-1">
+              <img class="service-photo-1" src="images/index/main/house.svg" width="75" height="72">
+            </div>
             <h3 class="service-title">Жильё</h3>
             <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="service-item">
-            <img class="service-photo-2" src="">
+            <div class="service-photo-2">
+              <img class="service-photo-2" src="images/index/main/food.svg" width="75" height="72">
+            </div>
             <h3 class="service-title">Еда</h3>
             <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="service-item">
-            <img class="service-photo-3" src="">
+            <div class="service-photo-3">
+              <img class="service-photo-3" src="images/index/main/present.svg" width="75" height="72">
+            </div>
             <h3 class="service-title">Сувениры</h3>
             <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -102,7 +113,7 @@
       <section class="offer">
         <h2 class="offer">Заинтересовались?</h2>
         <h3 class="offer">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
-        <button class="offer-button" href="#">ПОИСК ГОСТИНИЦЫ В Седоне</button>
+        <a class="offer-link" href="#">ПОИСК ГОСТИНИЦЫ В Седоне</a>
       </section>
       <section class="mailing">
         <h2 class="mailing">Подпишитесь на рассылку</h2>
@@ -120,16 +131,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
+              <img src="images/index/footer/vk.svg">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy ">
+              <img src="images/index/footer/telegram.svg">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="images/index/footer/youtube.svg">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -143,7 +157,8 @@
       </section>
       <section class="footer-logo">
         <a class="footer-logo" href=" https://htmlacademy.ru/">
-          <img class="footer-contacts-logo" alt="Логотип html academy" src="">
+          <img class="footer-contacts-logo" src="images/index/footer/Logo-footer.svg" width="114,9" height="32,9"
+            alt="Логотип html academy">
         </a>
       </section>
 
