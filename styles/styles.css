@@ -152,7 +152,18 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-  background-color:  #82B3D3;;
+  background-color: #82B3D3;
+  ;
   text-transform: uppercase;
   border: 0;
+}
+
+.footer-contacts-address-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
 }
