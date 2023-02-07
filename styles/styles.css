@@ -56,3 +56,103 @@ body {
   color: #FFFFFF;
   align-items: center;
 }
+
+.main-index {
+  color: #333333;
+  background: #FFFFFF;
+  background-image: url("../images/index/main/index-mountans.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.main-index-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-index-textsmall {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-title.white {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: #82B3D3;
+  text-transform: none;
+}
+
+.service-list {
+  text-align: center;
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.offer-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.mailing {
+  color: #333333;
+  background: #FFFFFF;
+  background-image: url("../images/index/main/Subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.mailingbig {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.mailingsmall {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.mailing-form {
+  text-align: center;
+}
+
+.button.mailing-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color:  #82B3D3;;
+  text-transform: uppercase;
+  border: 0;
+}
