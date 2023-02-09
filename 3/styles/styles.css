@@ -97,6 +97,7 @@ flex-grow: 1;
 }
 
 .page-container {
+
   width: 1200px;
   margin: 0 auto;
 }
@@ -226,6 +227,24 @@ flex-grow: 1;
   border: 0;
 }
 
+/* FOOTER */
+
+.page-footer-container {
+ display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 142px;
+  margin-right: 235px;
+}
+
+.footer-contacts {
+  width: 331px;
+  margin-right: 235px;
+}
+
 .footer-contacts-address-phone {
   font-style: normal;
   font-size: 40px;
@@ -234,6 +253,10 @@ flex-grow: 1;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-logo {
+  width: 115px;
 }
 
 /**catalog**/
