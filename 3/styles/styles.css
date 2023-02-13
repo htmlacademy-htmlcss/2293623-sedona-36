@@ -62,20 +62,29 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 450px;
+  list-style-type: none;
 }
 
 .navigation-user {
   width: 310px;
   margin-left: auto;
 }
+.navigation-list .navigation-user {
+  min-width: 44px;
+  min-height: 64px;
+}
 
 .navigation-link {
+ display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  padding: 20px 16px;
   color: #000000;
   align-items: center;
   text-transform: capitalize;
