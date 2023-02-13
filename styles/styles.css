@@ -228,10 +228,10 @@ body {
   text-decoration: none;
 }
 
-.mailing {
+.mailing-photo {
   color: #333333;
   background: #FFFFFF;
-  background-image: url("../images/index/main/Subscribe.jpg");
+  background-image: url("../images/index/main/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
