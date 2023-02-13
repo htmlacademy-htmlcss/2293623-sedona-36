@@ -31,7 +31,7 @@ body {
   background: #FFFFFF;
 }
 
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,7 +44,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
 
 .main-container {
   flex-grow: 1;
@@ -57,7 +56,6 @@ body {
   width: 1200 px;
   margin: 0 auto;
 }
-
 
 .navigation {
   display: flex;
@@ -121,6 +119,7 @@ body {
   min-height: 100%;
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .body {
@@ -128,8 +127,7 @@ body {
 }
 
 .logo-main {
-  display: block;
-  margin: 0 auto;
+  margin: 51px 371px 82px;
 }
 
 .main-index-text {
@@ -156,23 +154,21 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
- }
+}
 
 .advantages-item {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100%/3;
   min-height: 385px;
-  outline: 4px solid #000000;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
 
-.advantages-item-text{
-display: flex;
-flex-direction: column;
-
-width: 400px;
+.advantages-item-text {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }
 
 .advantages-title {
@@ -184,15 +180,25 @@ width: 400px;
 .advantages-title-white {
   font-size: 24px;
   line-height: 28px;
-  color: #FFFFFF;
-  background: #82B3D3;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.advantages-description-whitesmall {
-  color: #FFFFFF;
-  background: #82B3D3;
+.advantages-item:nth-child(2n) {
+  background: rgba(131, 179, 211, 0.12);
+  color: #000000;
 }
+
+.advantages-item:nth-child(3) {
+  background: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+.advantages-description {
+  color: #333333;
+}
+
+/* Главная - СЕРВИС */
 
 .service-list {
   display: flex;
@@ -222,10 +228,10 @@ width: 400px;
   text-decoration: none;
 }
 
-.mailing {
+.mailing-photo {
   color: #333333;
   background: #FFFFFF;
-  background-image: url("../images/index/main/Subscribe.jpg");
+  background-image: url("../images/index/main/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -294,7 +300,7 @@ width: 400px;
 
 /**catalog**/
 
-.main-inner {
+.main-inner-backphoto {
   color: #333333;
   background: #FFFFFF;
   background-image: url("../images/catalog/mountans-catalog.jpg");
@@ -314,7 +320,7 @@ width: 400px;
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-link-gost {
+.breadcrumbs-link-hotel {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
@@ -442,7 +448,7 @@ width: 400px;
 
 .pagination {
   display: flex;
- }
+}
 
 .pagination-link {
   font-size: 20px;
