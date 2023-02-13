@@ -16,7 +16,7 @@
   font-display: swap;
 }
 
-html{
+html {
   height: 100%;
 }
 
@@ -31,8 +31,23 @@ body {
   background: #FFFFFF;
 }
 
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
 .main-container {
-flex-grow: 1;
+  flex-grow: 1;
 }
 
 .page-header {
@@ -42,6 +57,7 @@ flex-grow: 1;
   width: 1200 px;
   margin: 0 auto;
 }
+
 
 .navigation {
   display: flex;
@@ -70,13 +86,16 @@ flex-grow: 1;
 }
 
 .navigation-link-button {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  align-items: center;
-  text-transform: capitalize;
+  text-align: center;
+  width: 160px;
   text-decoration: none;
+  background: #756157;
+  text-transform: uppercase;
 }
 
 .notification-badge {
@@ -97,9 +116,15 @@ flex-grow: 1;
 }
 
 .page-container {
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 1200px;
   margin: 0 auto;
+}
+
+.body {
+  height: 100%;
 }
 
 .logo-main {
@@ -113,12 +138,14 @@ flex-grow: 1;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .main-index-textsmall {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333333;
 }
 
 .advantages-list {
@@ -127,11 +154,11 @@ flex-grow: 1;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
- }
+}
 
 .advantages-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   outline: 4px solid #000000;
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -168,7 +195,9 @@ flex-grow: 1;
 }
 
 .service-list {
+  display: flex;
   text-align: center;
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .service-title {
@@ -176,6 +205,10 @@ flex-grow: 1;
   font-size: 22px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.service-item-food {
+  background: #FFFFFF;
 }
 
 .offer-link {
@@ -230,7 +263,7 @@ flex-grow: 1;
 /* FOOTER */
 
 .page-footer-container {
- display: flex;
+  display: flex;
   width: 1200px;
   margin: 0 auto;
 }
@@ -287,6 +320,23 @@ flex-grow: 1;
   color: #FFFFFF;
 }
 
+/* КАТАЛОГ СПИСОК ТОВАРОВ С ФИЛЬТРАМИ */
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-products-first {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.catalog-products-second {
+  display: flex;
+  width: 340px;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -301,10 +351,12 @@ flex-grow: 1;
 }
 
 .button-catalog {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.button-catalog-1 {
+.button-catalog-apply {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -315,7 +367,7 @@ flex-grow: 1;
   border: 0;
 }
 
-.button-catalog-2 {
+.button-catalog-reset {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -385,20 +437,38 @@ flex-grow: 1;
   color: #333333;
 }
 
+
+/* Пагинация */
+
+.pagination {
+  display: flex;
+ }
+
 .pagination-link {
   font-size: 20px;
-line-height: 36px;
-text-align: center;
-text-transform: uppercase;
-text-decoration: none;
-color: #FFFFFF;
-background-color: #82B3D3;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
 }
 
 .pagination-current {
   color: #000000;
 }
 
-.pagination-etc {
+
+/* Рассылка в каталоге */
+
+.mailing-catalog {
+  text-align: center;
+}
+
+.mailingbig-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   color: #000000;
 }
