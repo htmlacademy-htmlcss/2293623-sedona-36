@@ -11,7 +11,7 @@
     <div class="page-container">
       <header class="page-header">
         <a class="page-header-logo">
-          <img class="page-header-logo" src="images/index/header/logo-header.svg" width="140" height="70"
+          <img class="page-header-logo-pic" src="images/index/header/logo-header.svg" width="140" height="70"
             alt="Логотип Седона «Седона».">
         </a>
         <nav class="navigation">
@@ -27,41 +27,30 @@
             </li>
 
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <span class="notification-badge">12</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-button" href="#">Хочу сюда!</a>
-            </li>
-            </li>
-
-          </ul>
+          <div class="navigation-user">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="notification-badge">12</span>
+            </a>
+            <a class="navigation-link-button buttons" href="#">Хочу сюда!</a>
+          </div>
 
         </nav>
       </header>
 
 
       <main class="main-index main-container">
-
         <section class="hero">
           <h1 class="visually-hidden">Седона</h1>
           <img class="welcom-main" src="images/index/main/welcome.svg" width="458" height="352"
             alt="Welcom to the gorgeous Sedona, because the Grand Canyon sucks ">
         </section>
         <div class="main-index-text-first">
-          <p class="main-index-text-sedona">
           <h2 class="main-index-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <h3 class="main-index-textsmall">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
-          </p>
+          <p class="main-index-textsmall">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
 
         <section class="advantages">
@@ -74,7 +63,7 @@
                 </p>
               </div>
               <div class="advantages-photo-city">
-                <img class="advantages-photo-city" width="800" height="385" src="images/index/main/photo-1.jpg"
+                <img class="advantages-photo-city-img" width="800" height="385" src="images/index/main/photo-1.jpg"
                   alt="Вид из номера гостиницы">
               </div>
             </li>
@@ -84,7 +73,7 @@
                 <p class="advantages-description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="advantages-item advantages-road">
+            <li class="advantages-item advantages-dark">
               <div class="advantages-item-text advantages-item-flex">
                 <h3 class="advantages-title">Красивая дорога</h3>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -110,45 +99,49 @@
           </ul>
         </section>
         <section class="service">
-          <h2 class="main-index-text service">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <h3 class="main-index-textsmall service">Опытный персонал и качественное обслуживание!</h3>
+          <div class="main-index-text-service">
+            <h2 class="main-index-text text-big">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="main-index-textsmall">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="service-list">
             <li class="service-item">
-              <div class="service-photo-house">
+              <div class="service-item-list">
                 <img class="service-photo-house" src="images/index/main/house.svg" width="75" height="72">
+                <h3 class="service-title">Жильё</h3>
+                <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </div>
-              <h3 class="service-title">Жильё</h3>
-              <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="service-item service-item-food">
-              <div class="service-photo-food">
+              <div class="service-item-list">
                 <img class="service-photo-food" src="images/index/main/food.svg" width="75" height="72">
+                <h3 class="service-title">Еда</h3>
+                <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </div>
-              <h3 class="service-title ">Еда</h3>
-              <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="service-item">
-              <div class="service-photo-present">
+              <div class="service-item-list">
                 <img class="service-photo-present" src="images/index/main/present.svg" width="75" height="72">
+                <h3 class="service-title">Сувениры</h3>
+                <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
               </div>
-              <h3 class="service-title">Сувениры</h3>
-              <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="offer">
-          <p class="offer-text">
-          <h2 class="main-index-text">Заинтересовались?</h2>
-          <h3 class="main-index-textsmall">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
-            гостиниц в Седоне</h3>
-          </p>
-          <a class="offer-link" href="#">Поиск гостиницы в Седоне</a>
+          <div class="offer-div">
+            <p class="offer-text">
+            <h2 class="main-index-text text-big">Заинтересовались?</h2>
+            <h3 class="main-index-textsmall">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
+              гостиниц в Седоне</h3>
+            </p>
+            <a class="offer-link" href="#">Поиск гостиницы в Седоне</a>
+          </div>
         </section>
         <section class="mailing">
           <div class="mailing-photo">
 
-              <p class="mailingbig">Подпишитесь на рассылку</p>
-              <p class="mailingsmall">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <h2 class="mailingbig text-big">Подпишитесь на рассылку</h2>
+            <p class="mailingsmall">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
             <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="mailing-email" class="visually-hidden">Email</label>
@@ -167,19 +160,16 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="button" href="https://vk.com/htmlacademy">
-                  <img src="images/index/footer/vk.svg">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="button" href="https://t.me/htmlacademy ">
-                  <img src="images/index/footer/telegram.svg">
                   <span class="visually-hidden">Телеграм</span>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                  <img src="images/index/footer/youtube.svg">
                   <span class="visually-hidden">Ютуб</span>
                 </a>
               </li>

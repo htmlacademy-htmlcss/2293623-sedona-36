@@ -81,6 +81,8 @@ body {
 }
 
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   width: 310px;
   margin-left: auto;
 }
@@ -103,18 +105,24 @@ body {
 
 }
 
-.navigation-link-button {
+.buttons {
   display: block;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
   text-align: center;
-  width: 160px;
   text-decoration: none;
-  background: #756157;
   text-transform: uppercase;
 }
+
+.navigation-link-button {
+
+  width: 160px;
+  background: #756157;
+
+}
+
 
 .notification-badge {
   font-size: 10px;
@@ -130,11 +138,24 @@ body {
   background: #FFFFFF;
   background-image: url("../images/index/main/index-mountans.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-position: center;
+  background-size: cover;
+  padding: 51px 0 82px;
+  text-align: center;
 }
 
-.welcom-main {
-  margin: 51px 371px 82px;
+.main-index-text-first {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.offer-div {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.main-index-text.text-big {
+  margin-bottom: 20px;
 }
 
 .main-index-text {
@@ -144,13 +165,17 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 auto 25px;
+  max-width: 620px;
 }
 
 .main-index-textsmall {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
+  margin: 0 auto;
+  font-weight: 400;
+  max-width: 592px;
 }
 
 /* Главная - ПРЕИМУЩЕСТВА */
@@ -175,17 +200,23 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
+  padding: 102px 85px;
+  box-sizing: border-box;
+}
+
+.advantages-item-flex {
+  padding: 113px 85px 112px;
+  align-items: center;
 }
 
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-}
-
-.advantages-item-flex {
-  display: flex;
-  width: 400px;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  max-width: 175px;
 }
 
 .advantages-title-white {
@@ -193,6 +224,19 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.advantages-description-whitesmall {
+  margin: 0;
+}
+
+.advantages-photo-city-img,
+.advantages-photo-rock {
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item:nth-child(2n) {
@@ -200,21 +244,46 @@ body {
   color: #000000;
 }
 
-.advantages-road {
+.advantages-dark {
   background: rgba(131, 179, 211, 0.2);
   color: #000000;
+
 }
 
 .advantages-description {
   color: #333333;
+  margin: 0;
 }
 
 /* Главная - СЕРВИС */
 
+.main-index-text-service {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .service-list {
   display: flex;
-  text-align: center;
   background: rgba(131, 179, 211, 0.12);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.service-item {
+  width: 400px;
+  min-height: 385px;
+  align-items: center;
+}
+
+.service-item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 81px 85px;
+  box-sizing: border-box;
 }
 
 .service-title {
@@ -222,6 +291,14 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.service-description {
+  margin: 0;
+  text-align: center;
 }
 
 .service-item-food {
@@ -229,12 +306,11 @@ body {
 }
 
 .offer-link {
-
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-
+  margin-top: 54px;
   text-align: center;
   text-transform: uppercase;
   background-color: #756157;
@@ -247,6 +323,8 @@ body {
   background-image: url("../images/index/main/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .mailingbig {
@@ -256,6 +334,8 @@ body {
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .mailingsmall {
@@ -263,6 +343,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  margin: 0 auto 54px;
+  max-width: 475px;
 }
 
 .mailing-form {
@@ -285,11 +367,26 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 40px 70px 30px;
 }
 
 .footer-social {
   width: 142px;
   margin-right: 235px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+
 }
 
 .footer-contacts {
@@ -313,12 +410,14 @@ body {
 
 /**catalog**/
 
+
 .main-inner-backphoto {
   color: #333333;
   background: #FFFFFF;
   background-image: url("../images/catalog/mountans-catalog.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding: 35px 70px 70px;
 }
 
 .main-inner-title {
@@ -326,20 +425,36 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
 }
 
 .breadcrumbs-link-home {
   background: url("../images/catalog/home-page.svg");
   background-repeat: no-repeat;
+  margin-right: 28px;
 }
 
 .breadcrumbs-link-hotel {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+  text-align: center;
 }
 
 /* КАТАЛОГ СПИСОК ТОВАРОВ С ФИЛЬТРАМИ */
+
+.catalog-products {
+  margin: 0;
+  padding: 0;
+}
 
 .catalog-filter {
   display: flex;
@@ -392,18 +507,44 @@ body {
   color: #FFFFFF;
 }
 
+.search-result-view{
+display: flex;
+margin: 50px 70px 40px;
+}
+
 .search-result {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-right: 192px;
+}
+
+.select-control-view {
+  display: flex;
 }
 
 .select-control {
+  display: flex;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin-right: 70px;
+
+}
+
+.button-card,
+.button-main-list,
+.button-list {
+  height: 48px;
+  width: 48px;
+}
+
+.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-title {
@@ -422,6 +563,8 @@ body {
 .product-card-price {
   font-weight: 400;
 }
+
+
 
 .product-card-button {
   font-weight: 700;
@@ -459,18 +602,36 @@ body {
 
 /* Пагинация */
 
+.pagination-container{
+  display: flex;
+  margin: 0 70px 60px;
+}
+
 .pagination {
   display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
+  min-width: 60px;
+  height: 60px;
+  padding: 12px 24px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
+  border-radius: 4px;
 }
 
 .pagination-current {
