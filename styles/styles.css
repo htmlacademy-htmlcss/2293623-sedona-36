@@ -553,7 +553,17 @@ body {
 }
 
 .product-card {
+display: flex;
+flex-direction: column;
+border: 1px solid #E6E6E6;
+border-radius: 4px;
+margin: 0;
+padding: 20px;
+}
 
+.product-card-image {
+  margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .product-card-title {
@@ -562,7 +572,28 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 16px;
 
+}
+
+.product-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-stars-rating {
+  display: flex;
+  justify-content: space-between;
+  }
+
+.hotel-price {
+  display: flex;
+  margin: 0;
+  margin-bottom: 16px;
+  justify-content: space-between;
 }
 
 .product-card-link {
@@ -572,8 +603,6 @@ body {
 .product-card-price {
   font-weight: 400;
 }
-
-
 
 .product-card-button {
   font-weight: 700;
