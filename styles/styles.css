@@ -365,10 +365,10 @@ body {
 
 .page-footer-container {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  width: 1060px;
+  padding: 40px 70px 30px;
+  margin-top: 104px;
+  align-items: center;
 }
 
 .footer-social {
@@ -378,7 +378,6 @@ body {
 
 .footer-social-list {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -406,7 +405,7 @@ body {
 }
 
 .footer-logo {
-  width: 115px;
+  display: flex;
 }
 
 /**catalog**/
@@ -553,12 +552,12 @@ body {
 }
 
 .product-card {
-display: flex;
-flex-direction: column;
-border: 1px solid #E6E6E6;
-border-radius: 4px;
-margin: 0;
-padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  margin: 0;
+  padding: 20px;
 }
 
 .product-card-image {
@@ -587,7 +586,7 @@ padding: 20px;
 .product-stars-rating {
   display: flex;
   justify-content: space-between;
-  }
+}
 
 .hotel-price {
   display: flex;
