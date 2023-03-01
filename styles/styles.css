@@ -121,6 +121,19 @@ margin-bottom: 23px;
   content: "";
 }
 
+.notification-badge {
+  display: inline-block;
+  position: absolute;
+  font-weight: 400;
+  min-width: 11px;
+  height: 10px;
+  font-size: 10px;
+line-height: 10px;
+text-align: center;
+margin-top: 16px;
+margin-left: 26px;
+}
+
 .navigation-link {
   display: block;
   font-weight: 700;
