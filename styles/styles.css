@@ -106,6 +106,19 @@ body {
   width: 355px;
   margin-left: auto;
   align-items: center;
+  position: relative;
+}
+
+.navigation-user::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #7DB54F;
+  border-radius: 10px;
+  left: 66px;
+margin-bottom: 23px;
+
+  content: "";
 }
 
 .navigation-link {
@@ -136,19 +149,6 @@ body {
   width: 44px;
   height: 64px;
   padding: 0;
-}
-
-.navigation-user::before {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #7DB54F;
-  border-radius: 10px;
-  left: 70%;
-  margin-bottom: 20px;
-  margin-left: 6px;
-
-  content: "";
 }
 
 /* .buttons {
