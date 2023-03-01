@@ -67,6 +67,7 @@ body {
   height: 64px;
   margin: 0 auto;
   padding: 0;
+
 }
 
 .page-header-logo {
@@ -83,7 +84,7 @@ body {
 
 .navigation {
   display: flex;
-}
+  }
 
 .navigation-list {
   display: flex;
@@ -124,10 +125,17 @@ body {
 
 .navigation-link-search {
   background-image: url("../images/index/header/search.svg");
+  width: 44px;
+    height: 64px;
+    padding: 0;
+
 }
 
 .navigation-link-like {
   background-image: url("../images/index/header/love.svg");
+  width: 44px;
+    height: 64px;
+    padding: 0;
 }
 
 /* .buttons {
@@ -169,6 +177,8 @@ body {
   min-width: 160px;
   max-height: 36px;
   padding: 8px 34px;
+  margin-left: 20px;
+  margin-right: 70px;
 }
 
 
@@ -570,7 +580,10 @@ body {
 .search-result-view {
   display: flex;
   margin: 50px 70px 40px;
+  align-items: center;
+  justify-content: space-around;
 }
+
 
 .search-result {
   font-weight: 700;
@@ -583,16 +596,21 @@ body {
 
 .select-control-view {
   display: flex;
-}
+  width: 522px;
+height: 49px;
+  }
 
 .select-control {
   display: flex;
   font-size: 18px;
-  line-height: 21px;
-  text-align: center;
+  padding: 0 14px;
+  padding-left: 20px;
   margin-right: 70px;
-
-}
+  min-width: 292px;
+  border: 2px solid #E5E5E5;
+border-radius: 4px;
+color: #333333;
+  }
 
 .button-card,
 .button-main-list,
@@ -603,12 +621,19 @@ body {
   border-radius: 4px;
 }
 
+.button-main-list {
+  margin: 0 8px;
+}
+
 .switch {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+border-radius: 4px;
 }
+
 
 .catalog-products-second {
   width: 1060px;
