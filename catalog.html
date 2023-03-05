@@ -23,7 +23,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link">Гостиницы</a>
+              <a class="navigation-link navigation-link-hotel">Гостиницы</a>
             </li>
 
           </ul>
@@ -35,7 +35,7 @@
               <span class="visually-hidden">Избранное</span>
               <span class="notification-badge">12</span>
             </a>
-            <a class="navigation-button buttons button-command-one" href="#">Хочу сюда!</a>
+            <a class="navigation-button buttons " href="#">Хочу сюда!</a>
           </div>
 
         </nav>
@@ -65,46 +65,78 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="Бассейн" checked>
+                        <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>
+                        <span class="control-mark"></span>
                         <span class="control-span">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="Парковка" checked>
+                        <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>
+                        <span class="control-mark"></span>
                         <span class="control-span">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="Wi-Fi">
+                        <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                        <span class="control-mark"></span>
                         <span class="control-span">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
 
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group-two">
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+                        <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked>
+                        <span class="control-mark"></span>
                         <span class="control-span">Гостиница </span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="motel">
+                        <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                        <span class="control-mark"></span>
                         <span class="control-span">Мотель </span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="Apartments">
+                        <input class="visually-hidden control-input" type="radio" name="product-group" value="Apartments">
+                        <span class="control-mark"></span>
                         <span class="control-span">Апартаменты </span>
                       </label>
                     </li>
+                </fieldset>
+                <fieldset class="catalog-filter-price">
+                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                        <input class="range-input-left" type="number" value="0" name="min-price"> от
+                      </label>
+                      <label class="catalog-filter-label">
+                        <input class="range-input-right" type="number" value="9000" name="max-price"> до
+                      </label>
+                    </div>
+
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+
+
+                  </div>
                 </fieldset>
                 <div class="button-catalog">
                   <button class="button-catalog-apply buttons button-command-two" type="submit">Применить</button>
@@ -125,15 +157,40 @@
             </select>
 
             <a class="button-card switch" href="#">
-              <svg  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" /></svg>
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                fill="none" viewBox="0 0 16 14">
+                <path fill="#000"
+                  d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+              </svg>
               <span class="visually-hidden">Показать карточки</span>
             </a>
             <a class="button-main-list switch" href="#">
-              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                fill="none" viewBox="0 0 16 14">
+                <g fill="#000" clip-path="url(#a)">
+                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
               <span class="visually-hidden">Показать одну главную карточку и список</span>
             </a>
             <a class="button-list switch" href="#">
-              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                fill="none" viewBox="0 0 16 14">
+                <g fill="#000" clip-path="url(#a)">
+                  <path
+                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -150,7 +207,7 @@
                 <b class="product-card-price">от 4000 ₽</b>
               </div>
               <div class="product-card-buttons">
-                <a class=" buttons button-command-one" href="#">Подробнее</a>
+                <a class=" buttons" href="#">Подробнее</a>
                 <a class="product-card-favorit-button buttons button-command-two" href="#">В избранное</a>
               </div>
               <div class="product-stars-rating">
@@ -170,7 +227,7 @@
                 <b class="product-card-price">от 5000 ₽</b>
               </div>
               <div class="product-card-buttons">
-                <a class="buttons button-command-one" href="#">Подробнее</a>
+                <a class="buttons" href="#">Подробнее</a>
                 <a class="product-card-like-button buttons" href="#">В избранном</a>
               </div>
               <div class="product-stars-rating">
@@ -190,7 +247,7 @@
                 <b class="product-card-price">от 2500 ₽</b>
               </div>
               <div class="product-card-buttons">
-                <a class="buttons button-command-one" href="#">Подробнее</a>
+                <a class="buttons" href="#">Подробнее</a>
                 <a class="product-card-favorit-button buttons button-command-two" href="#">В избранное</a>
               </div>
               <div class="product-stars-rating">
@@ -210,7 +267,7 @@
                 <b class="product-card-price">от 1500 ₽</b>
               </div>
               <div class="product-card-buttons">
-                <a class="buttons button-command-one" href="#">Подробнее</a>
+                <a class="buttons" href="#">Подробнее</a>
                 <a class="product-card-favorit-button buttons button-command-two" href="#">В избранное</a>
               </div>
               <div class="product-stars-rating">
