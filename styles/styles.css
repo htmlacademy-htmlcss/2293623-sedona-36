@@ -238,6 +238,7 @@ body {
   background-size: cover;
   padding: 51px 0 82px;
   text-align: center;
+  position: relative;
 }
 
 .hero::after {
@@ -246,10 +247,10 @@ body {
   width: 1200px;
   height: 57px;
   top: auto;
-  bottom: -74px;
-  right: 0;
-  left: 160px;
+  bottom: 0;
+  left: 0;
   content: "";
+
 }
 
 .main-index-text-first {
