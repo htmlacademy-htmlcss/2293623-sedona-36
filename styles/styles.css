@@ -239,9 +239,9 @@ body {
   background-size: cover;
   padding: 51px 0 82px;
   text-align: center;
-  }
+}
 
-.hero::after {
+/* .hero::after {
   position: absolute;
   background-image: url("../images/index/main/decor.svg");
   width: 1200px;
@@ -250,7 +250,11 @@ body {
   bottom: 126px;
   left: 0;
   content: "";
+} */
 
+.dec-pic {
+  position: relative;
+  top: 86px;
 }
 
 .main-index-text-first {
