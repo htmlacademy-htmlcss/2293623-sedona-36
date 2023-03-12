@@ -164,8 +164,8 @@ body {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  top: 13px;
-  right: 0;
+  top: 11px;
+  right: 5px;
 }
 
 .navigation-link-search {
@@ -237,24 +237,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 352px;
   padding: 51px 0 82px;
   text-align: center;
 }
 
-/* .hero::after {
-  position: absolute;
-  background-image: url("../images/index/main/decor.svg");
-  width: 1200px;
-  height: 57px;
-  top: auto;
-  bottom: 126px;
-  left: 0;
-  content: "";
-} */
-
 .dec-pic {
   position: relative;
-  top: 86px;
+  top: 20px;
 }
 
 .main-index-text-first {
@@ -269,6 +259,7 @@ body {
 
 .main-index-text.text-big {
   margin-bottom: 20px;
+  max-width: 505px;
 }
 
 .main-index-text {
@@ -288,7 +279,7 @@ body {
   text-align: center;
   margin: 0 auto;
   font-weight: 400;
-  max-width: 592px;
+  max-width: 651px;
 }
 
 /* Главная - ПРЕИМУЩЕСТВА */
@@ -329,6 +320,18 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
   max-width: 175px;
+  position: relative;
+}
+
+.advantages-title::after {
+  width: 60px;
+  height: 2px;
+  background:rgba(0, 0, 0, 0.3);
+  bottom: -1px;
+  left: 57px;
+  content: "";
+
+  position: absolute;
 }
 
 .advantages-title-light {
@@ -341,6 +344,19 @@ body {
   padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.advantages-title-light::after {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  bottom: -1px;
+  left: 85px;
+  content: "";
+
+  position: absolute;
+
 }
 
 .advantages-description-whitesmall {
