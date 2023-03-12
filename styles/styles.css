@@ -76,8 +76,9 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: -6px;
-  position: relative
+  position: relative;
 }
+
 
 .page-header-logo-picture:hover,
 .page-header-logo-picture:focus {
@@ -238,8 +239,7 @@ body {
   background-size: cover;
   padding: 51px 0 82px;
   text-align: center;
-  position: relative;
-}
+  }
 
 .hero::after {
   position: absolute;
@@ -247,7 +247,7 @@ body {
   width: 1200px;
   height: 57px;
   top: auto;
-  bottom: 0;
+  bottom: 126px;
   left: 0;
   content: "";
 
