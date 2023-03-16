@@ -40,8 +40,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -187,6 +186,7 @@ body {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .buttons:hover,
@@ -254,7 +254,7 @@ body {
 }
 
 .main-index-text.text-big {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   max-width: 505px;
 }
 
@@ -291,7 +291,7 @@ body {
 .advantages-item {
   display: flex;
   flex-wrap: wrap;
-  min-height: 385px;
+  min-height: 378px;
   background-color: #82B3D3;
   color: currentColor;
 }
@@ -310,8 +310,8 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   padding-top: 0;
-  padding-bottom: 30px;
-  margin-top: 0;
+  padding-bottom: 33px;
+  margin-top: 6px;
   margin-bottom: 30px;
   max-width: 175px;
   position: relative;
@@ -321,8 +321,8 @@ body {
   width: 60px;
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
-  bottom: -1px;
-  left: 57px;
+  bottom: 1px;
+  left: 58px;
   content: "";
   position: absolute;
 }
@@ -333,19 +333,33 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-top: 0;
-  padding-bottom: 30px;
-  margin-top: 0;
-  margin-bottom: 30px;
+  padding: 0;
+  padding-bottom: 34px;
+  margin: 0;
+  margin-bottom: 28px;
   position: relative;
 }
 
-.advantages-title-light::after {
+.advantages-title-first::after {
   width: 60px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
-  bottom: -1px;
+  bottom: 3px;
   left: 85px;
+  content: "";
+  position: absolute;
+}
+
+.advantages-title-last{
+padding-top: 2px;
+}
+
+.advantages-title-last::after {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  bottom: 1px;
+  left: 56px;
   content: "";
   position: absolute;
 }
@@ -378,8 +392,8 @@ body {
 /* Главная - СЕРВИС */
 
 .main-index-text-service {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 63px;
+  padding-bottom: 62px;
 }
 
 .service-list {
@@ -426,8 +440,8 @@ body {
 
 .service-title {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 28px;
   text-transform: uppercase;
   margin: 0;
   padding-top: 102px;
@@ -505,6 +519,7 @@ body {
   line-height: 24px;
   border: none;
   box-sizing: border-box;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .mailing-button {
@@ -513,7 +528,6 @@ body {
   line-height: 36px;
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
-
 }
 
 /* FOOTER */
@@ -521,7 +535,7 @@ body {
 .page-footer-container {
   display: flex;
   width: 1060px;
-  padding: 40px 70px 30px;
+  padding: 46px 70px 30px;
   margin: 0;
   align-items: center;
 }
@@ -701,10 +715,11 @@ body {
   border-radius: 4px;
   border: 3px solid transparent;
   cursor: pointer;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .date-input::placeholder {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .date-input:hover {
@@ -872,6 +887,14 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.number-people::-webkit-outer-spin-button,
+.number-people::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .number-people::placeholder {
@@ -961,7 +984,7 @@ body {
   background-image: url("../images/catalog/mountans-catalog.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 65px;
 }
 
 .main-inner-title {
@@ -976,7 +999,7 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 40px;
+  margin: 0 0 39px;
   padding: 0;
   list-style: none;
 }
@@ -1015,6 +1038,7 @@ body {
 
 .catalog-filter {
   display: flex;
+  width: 100%;
 }
 
 .catalog-products-first {
@@ -1024,13 +1048,13 @@ body {
 .catalog-filter-group {
   border: none;
   margin: 0;
-  margin-right: 70px;
+  margin-right: 71px;
   padding: 0;
 }
 
 .catalog-filter-group-two {
   margin: 0;
-  margin-right: 140px;
+  margin-right: auto;
   padding: 0;
   border: none;
 }
@@ -1041,6 +1065,7 @@ body {
   line-height: 24px;
   color: #FFFFFF;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-filter-list {
@@ -1123,7 +1148,7 @@ body {
 .range-wrapper-inputs {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 48px;
+  padding-bottom: 43px;
   width: 288px;
 }
 
@@ -1131,11 +1156,14 @@ body {
   width: 143px;
   background: #F2F2F2;
   font-weight: 700;
-  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 17px;
   border: 3px solid transparent;
   box-sizing: border-box;
   margin: 0;
   cursor: pointer;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .range-input:hover {
@@ -1202,7 +1230,7 @@ body {
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1210,7 +1238,6 @@ body {
   position: relative;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-
 }
 
 .range-bar {
@@ -1247,13 +1274,11 @@ body {
 
 .toggle-min {
   top: -8px;
-
 }
 
 .toggle-max {
   top: -8px;
   right: 0;
-
 }
 
 .button-catalog {
@@ -1299,7 +1324,7 @@ body {
   display: flex;
   margin: 50px 70px 40px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .search-result {
@@ -1322,7 +1347,7 @@ body {
   display: flex;
   font-size: 18px;
   padding: 0 14px;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-right: 37px;
   margin-right: 70px;
   min-width: 292px;
@@ -1331,10 +1356,11 @@ body {
   color: #333333;
   cursor: pointer;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   background-image: url("../images/catalog/check.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .select-control:hover {
@@ -1359,7 +1385,7 @@ body {
 .button-card,
 .button-main-list,
 .button-list {
-  height: 48px;
+  height: 46px;
   width: 48px;
   border: 2px solid #000000;
   border-radius: 4px;
@@ -1403,7 +1429,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 63px;
   gap: 20px;
 }
 
@@ -1413,11 +1439,11 @@ body {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   margin: 0;
-  padding: 20px;
+  padding: 19px;
 }
 
 .product-card-image {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   object-fit: cover;
 }
 
@@ -1429,7 +1455,6 @@ body {
   color: #000000;
   margin: 0;
   margin-bottom: 16px;
-
 }
 
 .product-card-buttons {
@@ -1442,6 +1467,7 @@ body {
 .product-stars-rating {
   display: flex;
   justify-content: space-between;
+  max-height: 37px;
 }
 
 .hotel-price {
@@ -1487,18 +1513,17 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding: 9px 22px 8px 23px;
+  padding: 10px 21px 8px 23px;
   text-transform: uppercase;
   background: #F2F2F2;
   border-radius: 4px;
 }
 
-
 /* Пагинация */
 
 .pagination-container {
   display: flex;
-  margin: 0 70px 156px;
+  margin: 0 70px 139px;
   position: relative;
 }
 
@@ -1506,7 +1531,7 @@ body {
   position: absolute;
   width: 1060px;
   height: 1px;
-  top: -27px;
+  top: -22px;
   background-color: #E6E6E6;
   content: "";
 }
@@ -1559,4 +1584,6 @@ body {
 .mailingsmall-catalog {
   margin: 0;
   margin-bottom: 54px;
+  font-size: 22px;
+  line-height: 26px;
 }
