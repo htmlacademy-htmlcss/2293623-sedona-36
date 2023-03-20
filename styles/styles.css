@@ -774,6 +774,10 @@ body {
   border-color: #000000;
 }
 
+.date-input:disabled {
+  background:#c6c6c6;
+}
+
 .auth-check,
 .kid-quantity,
 .people-quantity {
@@ -811,7 +815,6 @@ body {
   color: #FF5757;
 }
 
-
 .auth-check-in::after {
   position: absolute;
   background-image: url("../images/index/calendar.svg");
@@ -825,7 +828,6 @@ body {
 .auth-check-out {
   position: relative;
 }
-
 
 .auth-check-out::after {
   position: absolute;
@@ -899,6 +901,11 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+.quantity-button:disabled {
+  fill: #000000;
+  background-color: #c6c6c6;
+}
+
 .kid {
   display: flex;
   min-width: 242px;
@@ -924,6 +931,10 @@ body {
 
 .number-people:focus {
   background-color: #E6E6E6;
+}
+
+.number-people:disabled {
+  background-color: #c6c6c6;
 }
 
 .number-people::-webkit-outer-spin-button,
@@ -1006,10 +1017,10 @@ body {
 }
 
 .button-search {
-  width: 577px;
+  min-width: 577px;
   font-size: 20px;
   line-height: 24px;
-  height: 60px;
+  min-height: 60px;
   background-color: #83B3D3;
   margin: 0;
   margin-top: 4px;
@@ -1225,6 +1236,10 @@ body {
   border-color: #000000;
 }
 
+.range-input:disabled {
+  background: #c6c6c6;
+}
+
 .catalog-filter-label-from {
   position: relative;
 }
@@ -1305,6 +1320,11 @@ body {
   box-shadow: 0 0 0 2px #83B3D3;
   border-radius: 5px;
 }
+
+.range-toggle:disabled {
+  box-shadow: 0 0 0 3px #c6c6c6;
+  background: #c6c6c6;
+  }
 
 .toggle-min {
   top: -8px;
